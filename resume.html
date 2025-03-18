@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h2, h3 {
+            color: #2c3e50;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        fieldset {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #3498db;
+        }
+        legend {
+            font-weight: bold;
+            color: #3498db;
+        }
+        .contact-btn {
+            display: block;
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact-btn:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align: center; color: #2c3e50;">M.Lasya Priya</h2>
+
+    <!-- Contact Me Button at the Top -->
+    <a href="mailto:lasyamahankali82@gmail.com" class="contact-btn">Contact Me</a>
+
+    <form >
+        <style>
+            .container{
+                padding: 20px 10px;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1pQ67EBqpEpvF5w426UN3G1j_msoeMUmmw&s);
+            background-repeat: no-repeat;
+        background-size: cover; 
+     }
+        </style>
+        
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" value="M.Lasya Priya" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="lasyamahankali82@gmail.com" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="+6304963993" required><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="KLR Avenue,Komarbanda,kodad" required><br>
+        </fieldset>
+
+        <!-- Career Objective -->
+        <fieldset>
+            <legend>Career Objective</legend>
+            <p>A highly motivated and results-driven software engineer with a passion for developing innovative web applications.</p>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Node.js, Express.js</li>
+                <li>SQL, MongoDB</li>
+            </ul>
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <h3>Frontend Developer - CODTECH Solutions</h3>
+            <p>Developed UI interface using html,css and JavaScript</p>
+
+            <h3>Web Development Intern- Internshala</h3>
+            <p>Built RESTful APIs in Node.js and worked with SQL databases.</p>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <p><b>Bachelor of Science in Computer Science</b> - Anurag Engineering College (2022 - 2026)</p>
+        </fieldset>
+
+        <!-- Projects -->
+        <fieldset>
+            <legend>Projects</legend>
+            <h3>ToDoList App</h3>
+            <p>Built a responsive personal todo app using HTML, CSS, and JavaScript.</p>
+            <h3>Blog Website</h3>
+            <p>Developed an Blog platform with expressjs and MongoDB.</p>
+        </fieldset>
+
+        <!-- Certifications -->
+        <fieldset>
+            <legend>Certifications</legend>
+            <ul>
+                <li>Certified Web Developer -CODTECH Solutions</li>
+            </ul>
+        </fieldset>
+
+        <!-- Hobbies -->
+        <fieldset>
+            <legend>Hobbies</legend>
+            <ul>
+                <li>Playing</li>
+                <li>Reading </li>
+                <li>Traveling</li>
+            </ul>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <p><b>Email:</b> <a href="mailto:lasyamahankali82@gmail.com">lasyamahanakali82@gmail.com</a></p>
+            <p><b>Phone:</b> <a href="tel:+6304963993">+6304963993</a></p>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="3" required></textarea><br>
+
+            <!-- Contact Me Button -->
+        </fieldset>
+
+
+<input type="submit" class="btn" value="Submit Resume" onclick="showSuccessMessage(event)">
+<p id="success-message" style="color: green; font-weight: bold; text-align: center; display: none;">Successfully taken details!</p>
+
+<script>
+    function showSuccessMessage(event) {
+        event.preventDefault(); // Prevents the form from submitting
+        document.getElementById("success-message").style.display = "block"; // Show success message
+    }
+</script>
+
+    </form>
+
+</div>
+
+</body>
+</html>
