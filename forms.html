@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter your name" required/>        
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Enter your last name"/>        
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="Enter your mail" required/>        
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" minlength="5" maxlength="10" required/>        
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" min="18" max="60" required/>        
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob"/>        
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"/> Male 
+            <input type="radio" name="gender" value="female"/> Female 
+            <input type="radio" name="gender" value="others"/> Others       
+        </div>
+        <div>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" value="Reading"/> Reading 
+            <input type="checkbox" value="Playing"/> Placing 
+            <input type="checkbox" value="Dancing"/> Dancing       
+        </div>
+        <div>
+            <label for="year">Year of Study:</label>
+            <select name="year" id="year">
+                <option value="1">1st year</option>
+                <option value="2">2nd year</option>
+                <option value="3">3rd year</option>
+                <option value="4">4th year</option>
+            </select>      
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="3"></textarea>
+         </div>
+         <div>
+            <label for="file">Upload your resume</label>
+            <input type="file"/>
+         </div>
+         <div>
+            <label for="experiance">What is your experiance</label>
+            <input type="range" min="5" max="20">
+         </div>
+         <div>
+            <label for="color">Pic a color</label>
+            <input type="color"/>
+         </div>
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
