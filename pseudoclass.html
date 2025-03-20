@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        .button{
+            background-color: blue;
+        }
+        .button:hover{
+            background-color: skyblue;
+            height: 100px;
+            width: 150px;
+            border-radius: 10px;
+        }
+        #input-name:focus{
+            border: 2px solid red;
+            outline:none;
+        }
+        /*p:nth-child(2){
+            color: orangered;
+        }*/
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">
+    This is Button
+</button>
+ <input type="text" name="lasya" id="input-name">
+ <div>
+    <p>1st P Tag</p>
+    <p>2nd P Tag</p>
+    <p>3rd P Tag</p>
+    <p>4th P Tag</p>
+</div>
+</body>
+</html>

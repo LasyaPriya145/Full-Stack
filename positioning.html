@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+    <style>
+        .paragraph{
+            position: static;
+            color: green;
+            top: 40px;
+            left: 40px;
+            font-size:40px;
+        }
+        .lasya{
+            position: relative;
+            color: orchid;
+            top: -40px;
+            bottom: 40px;
+            font-size:25px;
+        }
+        .this{
+            position: absolute;
+            color:slateblue;
+            top: 0px;
+            right: 30px;
+            font: size 15px;
+        }
+        .fix{
+            position: fixed;
+            color:black;
+            top: 0px;
+            font-size: 50px;
+        }
+        .stick{
+            position: sticky;
+            top: 0px;
+            background-color: aquamarine;
+            font-size:xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph">
+        By integrating these words into your writing, you can improve the flow of your arguments and make your ideas stand out more clearly. 
+        Being able to use these phrases will help you structure your work more effectively, making it easier for your reader to follow your arguments. 
+        By integrating these words into your writing, you can improve the flow of your arguments and make your ideas stand out more clearly. 
+        Being able to use these phrases will help you structure your work more effectively, making it easier for your reader to follow your arguments. 
+        Over 40% of our jobs are unfilled,the HR guy said to me.So you can pick and choose among the ones you’re qualified for.”
+    </p>
+    <p class="lasya">
+        By integrating these words into your writing, you can improve the flow of your arguments and make your ideas stand out more clearly. 
+        Being able to use these phrases will help you structure your work more effectively, making it easier for your reader to follow your arguments. 
+        Over 40% of our jobs are unfilled,the HR guy said to me.So you can pick and choose among the ones you’re qualified for.”
+    </p>
+    <p class="this">
+        Hi this is a Absolute positioning in CSS
+    </p>
+    <p class="fix">
+        This is a fixed positioning even if we scroll it doesn't move
+    </p>
+    <p class="stick">
+        This is sticky positioning in css
+    </p>
+</body>
+</html>
