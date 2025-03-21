@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        /*ABSOLUTE UNITS*/
+       /* h1{
+            font-size: 30px;
+        }
+        h1{
+            font-size: 30pt;
+        }
+        h1{
+            font-size: 2cm;
+        }
+        h1{
+            font-size: 10mm;
+        }
+        h1{
+            font-size: 1in;
+        }*/
+        /* RELATIVE UNITS*/
+        .unit-header{
+            font-size: 20px;
+        }
+        .units-head1{
+            font-size: 2em;
+        }
+
+        .units-head2{
+            font-size: 4em;
+        }
+        .unit{
+            font-size: 30px;
+        }
+        .unit1{
+            font-size: 2rem;
+        }
+        .unit2{
+            font-size: 4rem;
+        }
+        /*viewport based*/
+        .sai{
+            font-size: 20px;
+            display: flex;
+        }
+        .lasya{
+            font-size: 10px;
+            /*height: 50vh;*/
+            width: 50vw;
+            background-color: green;
+        }
+        .ammu{
+            font-size: 30px;
+            /*height: 50vh;*/
+            width: 50vw;
+            background-color: olivedrab;
+        }
+        /* PERCENTAGE UNITS*/
+        .percentage-units{
+            display: flex;
+            width: 300px;
+        }
+        .p-left{
+            background-color: yellow;
+            width: 50%;
+        }
+        .p-right{
+            background-color: purple;
+            width: 50%;
+        }
+        </style>
+</head>
+<body>
+    <h1>This is an example of units.</h1>
+    <div class="unit-header">
+        this is a div
+</div>
+    <div class="units-head1">
+         This is an example of relative units
+    </div>
+    <div class="units-head2">
+        These are font based relative units
+    </div>
+    <div class="unit">
+        this is an example
+        <div class="unit-1">
+            these are related to the root element.
+        </div>
+        <div>
+        if html size is 10 it will remain same for these element
+        </div>
+    </div>
+    <div class="sai">
+        this is viewport based relative units
+        <div class="lasya">
+            view port width 
+        </div>
+        <div class="ammu">
+            view port height
+        </div>
+    </div>
+    <div class="percentage-units">
+        Percentage units
+        <div class="p-left">Left</div>
+        <div class="p-right">Right</div>
+    </div>
+</body>
+</html>
