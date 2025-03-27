@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainheading{
+            color:rgb(217, 221, 160);
+        }
+        .mainPara{
+            color: rgb(226, 43, 202);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container" id="root"></div>
+    <script>
+        let rootElement=document.getElementById("root");
+        rootElement.textContent="Main Div";
+        rootElement.style.color="purple";
+        rootElement.style.fontSize="50px";
+
+        let heading1=document.createElement("h1");
+        heading1.textContent="This is a heading1 Tag";
+        heading1.style.fontSize="30px";
+        rootElement.appendChild(heading1);
+       // heading1.style.color="green";
+       // heading1.setAttribute("class","mainHeading");
+
+
+        let para1=document.createElement("p");
+        para1.textContent="This is a paragraph Tag";
+        heading1.style.fontSize="30px";
+        heading1.appendChild(para1);
+       // heading1.style.color="yellow";
+        para1.setAttribute("class","mainPara");
+        //para1.removeAttribute("class","mainPara");
+
+
+        // heading1.addEventListener("click",function(){
+        //     heading1.classList.toggle("mainheading")
+        // });
+
+        document.addEventListener("keydown",function(event){
+            heading1.classList.add("mainHeading")
+            console.log("the key is pressed:",event.key );
+        });
+
+        
+    </script>
+</body>
+</html>

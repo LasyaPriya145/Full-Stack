@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 40%;
+            background-color: lightblue;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        #count{
+            font-size: 30px;
+        }
+        button{
+            background-color: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color:lightpink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="count">0</div>
+        <button id="dec" onclick="decrement()">Decrement</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <button id="inc" onclick="increment()">Increment</button>
+    </div>
+    <script>
+        let count=0;
+        let countValue=document.getElementById("count");
+        let decButton=document.getElementById("dec");
+        let resetButton=document.getElementById("reset");
+        let incButton=document.getElementById("inc");
+
+        function decrement(){
+            count--;
+            countValue.textContent=count;
+            buttonUpdateColor()
+        };
+        function reset(){
+            count=0;
+            countValue.textContent=count;
+            buttonUpdateColor()
+        };
+        function increment(){
+            count++;
+            countValue.textContent=count;
+            buttonUpdateColor()
+        };
+
+        function buttonUpdateColor(){
+            if(count===0){
+                decButton.style.backgroundColor="";
+                incButton.style.backgroundColor="";
+            } else if(count%2===0){
+                decButton.style.backgroundColor="";
+                incButton.style.backgroundColor="red";
+            } else{
+                decButton.style.backgroundColor="green";
+                incButton.style.backgroundColor="";
+
+            }
+        }
+    </script>
+</body>
+</html>

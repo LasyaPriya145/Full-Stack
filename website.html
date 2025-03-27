@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jwells</title>
+    <style>
+         .main{
+            display: flex;
+            flex-direction: row;
+            
+            background-color:  #cdcab9;
+            position: fixed;
+            width: 100vw;
+            top: 0px;
+            z-index: 100;
+            height: 100px;
+        }
+        .img{
+            height: 100px;
+            width:100px;
+            border-radius: 20px;
+        }
+        .navend{
+            display:flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content:flex-end;
+            float: left;
+            align-items: center;
+            gap: 20px;
+            padding-right: 50px;
+                    
+        }
+        
+        .main-container{
+            display:flex;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .first{
+            display:flex;
+            height:100vh;
+            width:100vw;
+            background-image: url(./hi.jpg);
+            background-repeat: cover;
+            position: relative;
+            z-index: 1;
+            background-size: cover;
+            
+        }
+        .text{
+            font-size: 30px;
+            position: absolute;
+            right: 150px;
+            top: 200px;
+            color: white;
+        } 
+          .button{
+            padding: 10px 26px;
+            border: 2px solid transparent;
+            color:powderblue;
+            border-radius:20px;
+            background: transparent;
+            font-weight: lighter; 
+            transition: 0.3s ease;
+            display: flex;
+            gap: 26px;
+          }
+          .button:hover{
+            color:lightcoral;
+            border-color: white;
+            background: transparent;
+          }
+        .navhead{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            align-items: center;
+            justify-content: left;
+            font-weight: lighter;
+            color: black;
+            font-size: 20px;
+            
+        }
+        div{ 
+            height: 400px;
+            width: 400px;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <div class="navhead">
+            <h2>SPARKLE & SHINE</h2>
+        </div>
+        <div class="navend">
+            <a href="">HOME</a>
+            <a href="">ABOUT US</a>
+            <a href="./home.html">GALLERY</a>
+            <a href="">SERVICES</a>
+            <a href="">CONTACT US</a>
+        </div>
+    </nav>
+    <div class="first">
+        <div class="text">
+            <h2>"Unlock the treasure within-Wear our Jwells<br>
+                 LET THE MAGIC BEGIN"</h2>
+            <div calss="button">
+            <a href="#" class="button order-now">Order Now</a>
+            <a href="#" class="button contact-us">Contact Us</a>
+           
+        </div>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container" id="root"></div>
+    <script>
+        let rootElement=document.getElementById("root");
+        rootElement.textContent="Main Div";
+        rootElement.style.color="purple";
+        rootElement.style.fontSize="50px";
+
+        let heading1=document.createElement("h1");
+        heading1.textContent="This is a heading1 Tag";
+        heading1.style.fontSize="30px";
+        rootElement.appendChild(heading1);
+        heading1.style.color="green";
+
+        let heading2=document.createElement("h2");
+        heading2.textContent="This is a heading2 Tag";
+        heading2.style.fontSize="20px";
+        rootElement.appendChild(heading2);
+        heading2.style.color="cyan";
+    </script>
+</body>
+</html>
